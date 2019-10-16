@@ -132,4 +132,7 @@ el.addEventListener('transitionend', clean, false)
 
 ## 参考链接
 
-> [https://www.w3cplus.com/animation/high-performance-animations.html](https://www.w3cplus.com/animation/high-performance-animations.html) > [https://www.w3cplus.com/javascript/animating-layouts-with-the-flip-technique.html](https://www.w3cplus.com/javascript/animating-layouts-with-the-flip-technique.html) > [http://luchun.github.io/animating-layouts-with-the-flip-technique/](http://luchun.github.io/animating-layouts-with-the-flip-technique/) > [https://codepen.io/davidkpiano/pen/305a618d4dd75cbe8423183c70d6a43e](https://codepen.io/davidkpiano/pen/305a618d4dd75cbe8423183c70d6a43e)
+- > [https://www.w3cplus.com/animation/high-performance-animations.html](https://www.w3cplus.com/animation/high-performance-animations.html) 
+- > [https://www.w3cplus.com/javascript/animating-layouts-with-the-flip-technique.html](https://www.w3cplus.com/javascript/animating-layouts-with-the-flip-technique.html) 
+- > [http://luchun.github.io/animating-layouts-with-the-flip-technique/](http://luchun.github.io/animating-layouts-with-the-flip-technique/)
+- > [https://codepen.io/davidkpiano/pen/305a618d4dd75cbe8423183c70d6a43e](https://codepen.io/davidkpiano/pen/305a618d4dd75cbe8423183c70d6a43e)
