@@ -159,7 +159,7 @@ date: 2020-03-07 16:02:04
 - 再看，如果将 box2 的 z-index 去掉，child1、child2 的覆盖关系又如何
   - 先看结论
   - ![example2.png](example2.png)
-  - 此时 child1 处于 box1 创建的层叠上下文中，而 child2 由于 box2 去掉了 z-index，box2 没有产生层叠上下文，所以 child2 处于 html 创建的根层叠上下文中，此时二者上下文不同，无法比较，必须找到拥有相同层叠上下文的祖先元素进行比较；box1、box2、child2 都处于根层叠上下文中，三者可以比较，由于三者都为定位过的盒子，直接比较 z-index，由于 z-index 相同，所以处于 DOM 树后面的 child2 覆盖在 box1 上了，box2 没有 z-index 属性默认为 auto ,在同一层叠上下文中 auto 可当做 0 对待，所以三者 z-index 顺序为 child2>box1>box2，child2 在最上面，box1 在中(因为 child1 处于 box1 的层叠上下文中，所以 child1 的层叠顺序跟 box1 一致)，box2 在最下面
+  - 此时 child1 处于 box1 创建的层叠上下文中，而 child2 由于 box2 去掉了 z-index，box2 没有产生层叠上下文，所以 child2 处于 html 创建的根层叠上下文中，此时二者上下文不同，无法比较，必须找到拥有相同层叠上下文的祖先元素进行比较；box1、box2、child2 都处于根层叠上下文中，三者可以比较，由于三者都为定位过的盒子，直接比较 z-index，由于 child2、box1 的 z-index 相同，所以处于 DOM 树后面的 child2 覆盖在 box1 上了，box2 没有 z-index 属性默认为 auto ,在同一层叠上下文中 auto 可当做 0 对待，所以三者 z-index 顺序为 child2>box1>box2，child2 在最上面，box1 在中(因为 child1 处于 box1 的层叠上下文中，所以 child1 的层叠顺序跟 box1 一致)，box2 在最下面
 - 总结
   - 无论需要比较的两个元素处于 DOM 树的什么位置，只要向上找到到共同的层叠上下文(一定能找到，因为最终都有一个共同的层叠上下文-根层叠上下文)，然后根据层叠顺序图就可以得出覆盖关系
 
